@@ -25,7 +25,7 @@
 |# |Name               |Notes                                                   |Season             |Gender |Tier                              |Price     |
 |--|-------------------|--------------------------------------------------------|-------------------|-------|----------------------------------|----------|
 |01|**AMBRE XIV**      |Café torréfié · Ambre fumé · Épices chaudes · Musc boisé|Automne · Hiver    |Unisexe|Collection Principale · Bestseller|**100 DH**|
-|02|**RUSADIR L'OCÉAN**|Bergamote · Notes marines · Vétiver · Cèdre bleu        |Printemps · Été    |Homme  |Entrée de Gamme                   |70 DH     |
+|02|**RUSADIR L’OCÉAN**|Bergamote · Notes marines · Vétiver · Cèdre bleu        |Printemps · Été    |Homme  |Entrée de Gamme                   |70 DH     |
 |03|**ALDENVEIL**      |Poivre noir · Pomme verte · Patchouli · Santal          |Automne · Printemps|Homme  |Collection Principale · Nouveau   |70 DH     |
 |04|**CÉSAR RIFENSIS** |Cuir noir · Oud · Iris poudré · Encens                  |Automne · Hiver    |Homme  |Édition Prestige · Exclusif       |70 DH     |
 |05|**VALÉRIA ÉLIXIR** |Ambre doré · Vanille noire · Musc blanc · Rose de Damas |Hiver · Automne    |Femme  |Édition Prestige · Bestseller     |**80 DH** |
@@ -41,15 +41,15 @@
 
 **01 — Ambre XIV** · 100 DH · Unisexe · Automne/Hiver
 
-> Un sillage envoûtant né de l'ambre et du café. Intense, chaleureux, inoubliable.
+> Un sillage envoûtant né de l’ambre et du café. Intense, chaleureux, inoubliable.
 
-**02 — Rusadir L'Océan** · 70 DH · Homme · Printemps/Été
+**02 — Rusadir L’Océan** · 70 DH · Homme · Printemps/Été
 
-> L'écho des vagues de la Méditerranée dans un flacon. Frais, aérien, profond.
+> L’écho des vagues de la Méditerranée dans un flacon. Frais, aérien, profond.
 
 **03 — Aldenveil** · 70 DH · Homme · Automne/Printemps
 
-> L'équilibre parfait entre fraîcheur fruitée et profondeur boisée. Sophistiqué.
+> L’équilibre parfait entre fraîcheur fruitée et profondeur boisée. Sophistiqué.
 
 **04 — César Rifensis** · 70 DH · Homme · Automne/Hiver
 
@@ -61,7 +61,7 @@
 
 **06 — 1921** · 70 DH · Homme · Automne/Hiver
 
-> Un hommage à l'élégance intemporelle. Chaleureux, gourmand, magnétiquement séduisant.
+> Un hommage à l’élégance intemporelle. Chaleureux, gourmand, magnétiquement séduisant.
 
 **07 — V** · 70 DH · Femme · Printemps/Été
 
@@ -69,11 +69,11 @@
 
 **08 — Tayré Privé** · 70 DH · Femme · Printemps/Été
 
-> Délicat et romantique, comme une fleur qui éclot à l'aube. La grâce à l'état pur.
+> Délicat et romantique, comme une fleur qui éclot à l’aube. La grâce à l’état pur.
 
 **09 — Riodan Rhyvér** · 100 DH · Unisexe · Toutes saisons
 
-> Notre signature absolue. Une œuvre olfactive rare, d'une intensité inégalée.
+> Notre signature absolue. Une œuvre olfactive rare, d’une intensité inégalée.
 
 **10 — Cala Iris** · 70 DH · Unisexe · Printemps/Été
 
