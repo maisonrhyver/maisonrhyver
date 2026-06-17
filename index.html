@@ -629,7 +629,8 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   #contact { padding: 72px 24px; }
   .grid { grid-template-columns: repeat(2,1fr); }
   .campaign { grid-template-columns: 1fr; }
-  .camp-img { min-height: 360px; }
+  .camp-img { min-height: 300px; }
+  .camp-img:not(:has(img[src])) { display: none; }
   .camp-text { padding: 56px 28px; }
   .contact-grid { grid-template-columns: 1fr; max-width: 360px; }
   .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
@@ -641,6 +642,7 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   .prow { grid-template-columns: 36px 1fr 60px; }
   .p-gender, .p-act { display: none; }
   .p-price { text-align: right; }
+  .hero-scroll { display: none; }
 }
 @media (max-width: 600px) {
   .grid { grid-template-columns: 1fr; }
@@ -648,6 +650,17 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   .foot-grid { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; align-items: center; }
   .btn-white, .btn-ghost { width: min(280px, 88vw); text-align: center; }
+  /* Cart bar mobile */
+  .cart-bar { padding: 12px 16px; flex-wrap: nowrap; gap: 8px; align-items: center; }
+  .cart-bar.visible { max-height: 80px; }
+  .cart-bar-label { display: none; }
+  .cart-bar-left { min-width: 0; flex: 1; overflow: hidden; }
+  .cart-bar-items { max-width: 100%; font-size: 0.68rem; }
+  .cart-bar-info { font-size: 0.88rem; }
+  .cart-bar-btns { flex-shrink: 0; gap: 10px; }
+  .cart-bar-divider { display: none; }
+  .cart-clear { font-size: 0.52rem; letter-spacing: 0.18em; white-space: nowrap; }
+  .cart-order-btn { padding: 11px 14px; font-size: 0.58rem; letter-spacing: 0.16em; white-space: nowrap; flex-shrink: 0; }
 }
 
 /* ── LUXURY ADD TO CART BUTTON ─────────────────────────────────────────── */
@@ -678,12 +691,12 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   background: var(--black); color: var(--white);
   padding: 0 64px;
   display: flex; align-items: center; justify-content: space-between;
-  height: 0; overflow: hidden;
-  transition: height 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .cart-bar.visible {
-  height: 72px;
+  max-height: 120px;
   box-shadow: 0 -12px 60px rgba(0,0,0,0.35);
 }
 .cart-bar-left { display: flex; flex-direction: column; justify-content: center; }
@@ -766,7 +779,12 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   background: linear-gradient(90deg, transparent, rgba(200,180,140,0.7) 40%, rgba(200,180,140,0.7) 60%, transparent);
 }
 
-.wa-modal-inner { padding: 52px 48px 48px; }
+.wa-modal-inner {
+  padding: 52px 48px 48px;
+  max-height: 90vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 .wa-modal-close {
   position: absolute; top: 22px; right: 26px;
@@ -799,7 +817,7 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.06);
   padding: 16px 20px; margin-bottom: 32px;
-  max-height: 140px; overflow-y: auto;
+  max-height: 200px; overflow-y: auto;
 }
 .wa-cart-row {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -807,7 +825,7 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   font-family: var(--ff-body); font-size: 0.8rem;
   color: rgba(255,255,255,0.45);
 }
-.wa-cart-row:last-child { border-bottom: none; }
+.wa-cart-rows .wa-cart-row:last-child { border-bottom: none; }
 .wa-cart-row-name { font-family: var(--ff-italic); font-style: italic; color: rgba(255,255,255,0.6); }
 .wa-cart-row-price { font-family: var(--ff-display); letter-spacing: 0.08em; color: rgba(255,255,255,0.4); }
 .wa-cart-total {
@@ -844,7 +862,7 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   border-color: rgba(200,180,140,0.45);
   background: rgba(255,255,255,0.06);
 }
-.wa-field input[style*="200,80,80"] {
+.wa-field input.field-error {
   animation: fieldShake 0.35s var(--ease);
 }
 @keyframes fieldShake {
@@ -983,6 +1001,13 @@ nav.on-dark .social-icon:hover { color: var(--black); border-color: var(--border
   .bundle-right { align-items: flex-start; }
   .bundle-price-wrap { text-align: left; }
   .bundle-offer::after { display: none; }
+}
+@media (max-width: 600px) {
+  .wa-modal { width: 100vw; max-width: 100vw; border-left: none; border-right: none; }
+  .wa-modal-inner { padding: 44px 22px 36px; max-height: 92vh; }
+  .wa-modal-overlay { align-items: flex-end; }
+  .wa-modal { border-bottom: none; }
+  .wa-modal-title { font-size: 1.9rem; }
 }
 </style>
 </head>
@@ -1492,16 +1517,16 @@ function updateCartBar() {
   let displayTotal, suffix = '';
   if (bundleActive) {
     const extra = totalQty - 3;
-    const baseTotal = cart.reduce((sum, i) => {
-      const val = parseFloat(i.price.replace(/[^0-9.]/g, '')) || 0;
-      return sum + val * i.qty;
-    }, 0);
-    // 200 DH for first 3, rest at normal price
-    const extraCost = extra > 0 ? cart.slice().sort((a,b)=>parseFloat(b.price)-parseFloat(a.price)).reduce((s,item)=>{
-      let remaining = extra, cost = 0;
-      // simple: charge extras at their unit price
-      return s;
-    }, 0) : 0;
+    let extraCost = 0;
+    if (extra > 0) {
+      const allPrices = [];
+      cart.forEach(item => {
+        const unitPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+        for (let q = 0; q < item.qty; q++) allPrices.push(unitPrice);
+      });
+      allPrices.sort((a, b) => a - b);
+      extraCost = allPrices.slice(0, extra).reduce((s, p) => s + p, 0);
+    }
     displayTotal = 200 + extraCost;
     suffix = ' · Bundle';
   } else {
@@ -1524,7 +1549,7 @@ function buildModalSummary() {
   const regularTotal = cart.reduce((s, i) => s + (parseFloat(i.price.replace(/[^0-9.]/g,''))||0)*i.qty, 0);
   const displayTotal = bundleActive ? 200 : regularTotal;
 
-  el.innerHTML = cart.map(i => {
+  const rows = cart.map(i => {
     const sub = (parseFloat(i.price.replace(/[^0-9.]/g,''))||0)*i.qty;
     return `<div class="wa-cart-row">
       <span class="wa-cart-row-name">${i.qty > 1 ? i.qty+'× ' : ''}${i.name}</span>
@@ -1534,7 +1559,8 @@ function buildModalSummary() {
   (bundleActive ? `<div class="wa-cart-row" style="color:rgba(200,180,140,0.6);">
     <span class="wa-cart-row-name" style="color:rgba(200,180,140,0.7);">✦ Trio Bundle · Free Delivery</span>
     <span class="wa-cart-row-price" style="color:rgba(200,180,140,0.6);">−${(regularTotal - 200).toFixed(2)} DH</span>
-  </div>` : '') +
+  </div>` : '');
+  el.innerHTML = `<div class="wa-cart-rows">${rows}</div>` +
   `<div class="wa-cart-total">
     <span class="wa-cart-total-label">${bundleActive ? 'Bundle Total · Livraison Offerte' : 'Total'}</span>
     <span class="wa-cart-total-val">${displayTotal.toFixed(2)} DH</span>
@@ -1578,13 +1604,23 @@ function confirmWAOrder() {
   const notes = notesEl ? notesEl.value.trim() : '';
 
   // Clear previous error states
-  [nameEl, phoneEl, cityEl].forEach(el => el.style.borderColor = '');
+  [nameEl, phoneEl, cityEl].forEach(el => {
+    el.style.borderColor = '';
+    el.classList.remove('field-error');
+  });
 
   // Validate required fields
   let hasError = false;
-  if (!name)  { nameEl.style.borderColor  = 'rgba(200,80,80,0.6)'; nameEl.focus();  hasError = true; }
-  if (!phone) { phoneEl.style.borderColor = 'rgba(200,80,80,0.6)'; if (!hasError) phoneEl.focus(); hasError = true; }
-  if (!city)  { cityEl.style.borderColor  = 'rgba(200,80,80,0.6)'; if (!hasError) cityEl.focus();  hasError = true; }
+  function markError(el) {
+    el.style.borderColor = 'rgba(200,80,80,0.6)';
+    el.classList.remove('field-error');
+    void el.offsetWidth; // force reflow to restart animation
+    el.classList.add('field-error');
+    if (!hasError) { el.focus(); hasError = true; }
+  }
+  if (!name)  markError(nameEl);
+  if (!phone) markError(phoneEl);
+  if (!city)  markError(cityEl);
 
   if (hasError) {
     showToast('PLEASE FILL ALL REQUIRED FIELDS');
@@ -1595,7 +1631,23 @@ function confirmWAOrder() {
   const totalQty = cart.reduce((s, i) => s + i.qty, 0);
   const bundleActive = bundleMode && totalQty >= 3;
   const regularTotal = cart.reduce((s, i) => s + (parseFloat(i.price.replace(/[^0-9.]/g,'')) || 0) * i.qty, 0);
-  const total = bundleActive ? 200 : regularTotal;
+  let total;
+  if (bundleActive) {
+    const extra = totalQty - 3;
+    let extraCost = 0;
+    if (extra > 0) {
+      const allPrices = [];
+      cart.forEach(item => {
+        const unitPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+        for (let q = 0; q < item.qty; q++) allPrices.push(unitPrice);
+      });
+      allPrices.sort((a, b) => a - b);
+      extraCost = allPrices.slice(0, extra).reduce((s, p) => s + p, 0);
+    }
+    total = 200 + extraCost;
+  } else {
+    total = regularTotal;
+  }
   const items = cart.map(i => `  · ${i.name} × ${i.qty}  (${i.price})`).join('\n');
 
   const bundleLine = bundleActive
