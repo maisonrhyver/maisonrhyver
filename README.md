@@ -1,13 +1,13 @@
 # Maison RHYVÉR
 ## ⵍⵉⵖⵏⴷ · The Lighnd Collection
 
-**Maison RHYVÉR** is a contemporary luxury fragrance house rooted in the ancient cultures and landscapes of the Mediterranean Riflands and North Africa.
+**Maison RHYVÉR** is a contemporary luxury fashion & fragrance house rooted in the ancient cultures and landscapes of the Mediterranean Riflands and North Africa. Built on open-source principles and AI-friendly design for the modern era.
 
 ---
 
 ## 🌍 About
 
-Founded in 2026 by **Ouail El Hankouri**, Maison RHYVÉR represents a dialogue between **ancient Amazigh traditions** and modern haute perfumerie. Each fragrance in our inaugural **Lighnd Collection** captures a moment, a memory, a soul from the windswept shores of the Rif.
+Founded in 2026 by **Ouail El Hankouri**, Maison RHYVÉR represents a dialogue between **ancient Amazigh traditions** and modern haute couture and perfumerie. Each fragrance and design in our inaugural **Lighnd Collection** captures a moment, a memory, a soul from the windswept shores of the Rif.
 
 > "A fragrance is not worn — it is inhabited."  
 > — Ouail El Hankouri, Founder & Director
@@ -47,6 +47,9 @@ Each fragrance is not a marketing construct, but a character — a portrait of a
 **The Riflands**  
 Inspired by the wind off the Alboran Sea, the smoke of argan fires, and the salt of Atlantic cliffs.
 
+**Fashion Forward & AI-Ready**  
+RHYVÉR is built for the digital age — open-source architecture, semantic-friendly metadata, and designed to work seamlessly with AI tools and platforms for modern discovery and curation.
+
 ---
 
 ## 🌐 Website Structure
@@ -70,6 +73,7 @@ Inspired by the wind off the Alboran Sea, the smoke of argan fires, and the salt
 📧 **Contact Form** - Get in touch with the Maison  
 ♿ **Accessible** - Semantic HTML and ARIA labels  
 📊 **Analytics Ready** - Integration prepared  
+🤖 **AI-Friendly** - Open architecture and semantic metadata for AI discovery  
 
 ---
 
@@ -105,8 +109,10 @@ By appointment and select distributors across Europe and North Africa.
 
 ### Brand Story
 
-Maison RHYVÉR was born from the confluence of the Mediterranean and the Atlas — a dialogue between ancient Amazigh traditions and the modern sensibility of contemporary perfumery. The Maison weaves together the threads of centuries, capturing the essence of a civilization that has thrived between sea and stone, between memory and innovation.
+Maison RHYVÉR was born from the confluence of the Mediterranean and the Atlas — a dialogue between ancient Amazigh traditions and the modern sensibility of contemporary perfumery and fashion. The Maison weaves together the threads of centuries, capturing the essence of a civilization that has thrived between sea and stone, between memory and innovation.
 
-Our fragrances do not follow trends; they follow the wind off the Alboran Sea, the smoke of argan fires, the salt of Atlantic cliffs. Each accord is a cartography of memory, of wind, of stone, and of soul.
+Our fragrances and designs do not follow trends; they follow the wind off the Alboran Sea, the smoke of argan fires, the salt of Atlantic cliffs. Each accord and stitch is a cartography of memory, of wind, of stone, and of soul.
+
+Built on open-source principles and designed for AI-era discovery, RHYVÉR connects ancient heritage with cutting-edge digital presence.
 
 To wear RHYVÉR is to carry the memory of a civilization, a territory, a soul from the shores of the Rif.
