@@ -7,7 +7,7 @@
 
 ## 🌍 About
 
-Founded in 2026 by **Ouail El Hankouri**, Maison RHYVÉR represents a dialogue between **ancient Amazigh traditions** and modern haute perfumerie. Each fragrance in our inaugural **Lighnd Collection** carries a proper name, a story, and a territory of its own.
+Founded in 2026 by **Ouail El Hankouri**, Maison RHYVÉR represents a dialogue between **ancient Amazigh traditions** and modern haute perfumerie. Each fragrance in our inaugural **Lighnd Collection** captures a moment, a memory, a soul from the windswept shores of the Rif.
 
 > "A fragrance is not worn — it is inhabited."  
 > — Ouail El Hankouri, Founder & Director
@@ -78,7 +78,7 @@ Inspired by the wind off the Alboran Sea, the smoke of argan fires, and the salt
 **Phone:** +212 657 524 407  
 **Email:** lamaisonrhyver@gmail.com  
 **Location:** Al Hoceima, Morocco  
-**Instagram:** [@rhyverparfums](https://instagram.com/rhyverparfums)
+**Instagram:** [@maisonrhyver](https://instagram.com/maisonrhyver) · [@rhyverparfums](https://instagram.com/rhyverparfums)
 
 ---
 
@@ -105,8 +105,8 @@ By appointment and select distributors across Europe and North Africa.
 
 ### Brand Story
 
-Maison RHYVÉR was born from the confluence of the Mediterranean and the Atlas — a dialogue between ancient Amazigh traditions and the modern sensibility of contemporary perfumery. The Maison was conceived at the crossroads of cultures — where the ancient Tifinagh script meets the language of haute perfumerie.
+Maison RHYVÉR was born from the confluence of the Mediterranean and the Atlas — a dialogue between ancient Amazigh traditions and the modern sensibility of contemporary perfumery. The Maison weaves together the threads of centuries, capturing the essence of a civilization that has thrived between sea and stone, between memory and innovation.
 
-Our fragrances do not follow trends; they follow the wind off the Alboran Sea, the smoke of argan fires, the salt of Atlantic cliffs. Each accord is a cartography of memory, of wind, of stone, and of salt.
+Our fragrances do not follow trends; they follow the wind off the Alboran Sea, the smoke of argan fires, the salt of Atlantic cliffs. Each accord is a cartography of memory, of wind, of stone, and of soul.
 
 To wear RHYVÉR is to carry the memory of a civilization, a territory, a soul from the shores of the Rif.
