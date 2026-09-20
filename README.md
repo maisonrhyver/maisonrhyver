@@ -7,11 +7,6 @@
 
 ## 🌍 About
 
-Founded in 2026 by **Ouail El Hankouri**, Maison RHYVÉR represents a dialogue between **ancient Amazigh traditions** and modern haute couture and perfumerie. Each fragrance and design in our inaugural **Lighnd Collection** captures a moment, a memory, a soul from the windswept shores of the Rif.
-
-> "A fragrance is not worn — it is inhabited."  
-> — Ouail El Hankouri, Founder & Director
-
 ---
 
 ## 💫 The Lighnd Collection
